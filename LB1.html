@@ -6,16 +6,19 @@
     <title>LB1</title>
     <style>
         table, th, td {
-          border: 1px solid black;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
         }
         </style>
 </head>
 <body>
-Для будь-якого натурального числа <b>n>2</b> <br>
+<h2 id="section1">Текст</h2>
+<p>Для будь-якого натурального числа <b>n>2</b> <br>
 рівняння <i>а<sup>n</sup>+b<sup>n</sup>=с<sup>n</sup></i> <b>не має рішень </b>при <br>
-цілих ненульових числах а, b, c. <br>
+цілих ненульових числах а, b, c. </p>
 
-<ul><b>Факультети</b>
+<ul><h2 id="section2">Факультети</h2>
 <li>Факультет комп’ютерних наук 
     <ul>
     <li>Кафедра інформаційних управляючих систем (ІУС)</li>
@@ -69,9 +72,82 @@
     <li>Кафедра іноземних мов</li>
     </ul></li></ul>
 
-    <table> 
-        <caption>Курс&nbsp;валют</caption>
-
+    <table width="500"> 
+        <caption><h2 id="section3">Курс валют</h2></caption>
+        <thead>
+            <tr>
+                <td rowspan="2">Валюта</td>
+                <td colspan="2">Курс</td>
+                </tr>
+            <tr>
+                <td>Купівля</td>
+                <td>Продаж</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USD</td>
+                <td>41,1500</td>
+                <td>41,5000</td>
+            </tr>
+            <tr>
+                <td>EUR</td>
+                <td>44,7500</td>
+                <td>45,2900</td>
+            </tr>
+            <tr>
+                <td>PLN</td>
+                <td>10,2500</td>
+                <td>10,5900</td>
+            </tr>
+            <tr>
+                <td>GBP</td>
+                <td>53,0000</td>
+                <td>54,2750</td>
+            </tr>
+            <tr>
+                <td>CHF</td>
+                <td>47,2000</td>
+                <td>48,5000</td>
+            </tr>
+        </tbody>
     </table>
+    <br>
+    <form>
+        <fieldset style="width:300px">
+          <legend><h2 id="section4">Найкращий браузер:</h2></legend>
+          <div>
+            
+            <input type="radio" id="cbrowserChoice1" name="browser" value="chrome" />
+            <label for="contactChoice1">Chrome</label>
+            <br>
+            <input type="radio" id="browserChoice2" name="browser" value="firefox" />
+            <label for="contactChoice2">Firefox</label>
+            <br>
+            <input type="radio" id="browserChoice3" name="browser" value="opera" />
+            <label for="contactChoice3">Opera</label>
+            <br>
+            <input type="radio" id="browserChoice4" name="browser" value="edge" />
+            <label for="contactChoice4">Edge</label>
+            <br>
+            <input type="radio" id="browserChoice5" name="browser" value="tor" />
+            <label for="contactChoice5">Tor</label>
+          </div>
+          <div>
+            <br>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    <br>
+    
+    <ul><h2 id="section5">Зміст сторінки</h2>
+        <li><a href="#section1">Оформлений текст</a></li>
+        <li><a href="#section2">Список</a></li>
+        <li><a href="#section3">Таблиця</a></li>
+        <li><a href="#section4">Форма з керуючими елементами</a></li>
+        <li><a href="#section5">Посилання та зображення</a></li>
+    </ul>
+         
 </body>
 </html>
